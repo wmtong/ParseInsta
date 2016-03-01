@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0029517C1C840BA500D31419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029517B1C840BA500D31419 /* AppDelegate.swift */; };
-		0029517E1C840BA500D31419 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029517D1C840BA500D31419 /* ViewController.swift */; };
 		002951811C840BA500D31419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0029517F1C840BA500D31419 /* Main.storyboard */; };
 		002951831C840BA500D31419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002951821C840BA500D31419 /* Assets.xcassets */; };
 		002951861C840BA500D31419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002951841C840BA500D31419 /* LaunchScreen.storyboard */; };
+		00D7DE611C85209900195F84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D7DE601C85209900195F84 /* LoginViewController.swift */; };
+		9C44D5D06B77773235A2029C /* Pods_ParseInsta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169760A8FDF0D49108185FFE /* Pods_ParseInsta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		002951781C840BA400D31419 /* ParseInsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseInsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0029517B1C840BA500D31419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0029517D1C840BA500D31419 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		002951801C840BA500D31419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		002951821C840BA500D31419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		002951851C840BA500D31419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		002951871C840BA500D31419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00D7DE601C85209900195F84 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		169760A8FDF0D49108185FFE /* Pods_ParseInsta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseInsta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B5B00B2F580A553E71E8B6E /* Pods-ParseInsta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseInsta.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseInsta/Pods-ParseInsta.release.xcconfig"; sourceTree = "<group>"; };
+		A07F03DF0FB9B26AE4DED628 /* Pods-ParseInsta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseInsta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseInsta/Pods-ParseInsta.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C44D5D06B77773235A2029C /* Pods_ParseInsta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0029517A1C840BA500D31419 /* ParseInsta */,
 				002951791C840BA400D31419 /* Products */,
+				2C90F4EA82EDA9DE48A131EE /* Pods */,
+				2D754AF20F295B388C9F110E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +62,30 @@
 			isa = PBXGroup;
 			children = (
 				0029517B1C840BA500D31419 /* AppDelegate.swift */,
-				0029517D1C840BA500D31419 /* ViewController.swift */,
 				0029517F1C840BA500D31419 /* Main.storyboard */,
 				002951821C840BA500D31419 /* Assets.xcassets */,
 				002951841C840BA500D31419 /* LaunchScreen.storyboard */,
 				002951871C840BA500D31419 /* Info.plist */,
+				00D7DE601C85209900195F84 /* LoginViewController.swift */,
 			);
 			path = ParseInsta;
+			sourceTree = "<group>";
+		};
+		2C90F4EA82EDA9DE48A131EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A07F03DF0FB9B26AE4DED628 /* Pods-ParseInsta.debug.xcconfig */,
+				9B5B00B2F580A553E71E8B6E /* Pods-ParseInsta.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2D754AF20F295B388C9F110E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				169760A8FDF0D49108185FFE /* Pods_ParseInsta.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0029518A1C840BA500D31419 /* Build configuration list for PBXNativeTarget "ParseInsta" */;
 			buildPhases = (
+				533FE95920E21818663039E2 /* Check Pods Manifest.lock */,
 				002951741C840BA400D31419 /* Sources */,
 				002951751C840BA400D31419 /* Frameworks */,
 				002951761C840BA400D31419 /* Resources */,
+				679335CCF4E605EE20F9FA7A /* Embed Pods Frameworks */,
+				4D50887C88E1253D5B1C9E49 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +157,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D50887C88E1253D5B1C9E49 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseInsta/Pods-ParseInsta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		533FE95920E21818663039E2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		679335CCF4E605EE20F9FA7A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseInsta/Pods-ParseInsta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		002951741C840BA400D31419 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0029517E1C840BA500D31419 /* ViewController.swift in Sources */,
+				00D7DE611C85209900195F84 /* LoginViewController.swift in Sources */,
 				0029517C1C840BA500D31419 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +320,7 @@
 		};
 		0029518B1C840BA500D31419 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A07F03DF0FB9B26AE4DED628 /* Pods-ParseInsta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParseInsta/Info.plist;
@@ -256,6 +332,7 @@
 		};
 		0029518C1C840BA500D31419 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B5B00B2F580A553E71E8B6E /* Pods-ParseInsta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParseInsta/Info.plist;
@@ -284,6 +361,7 @@
 				0029518C1C840BA500D31419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
