@@ -11,6 +11,11 @@
 		002951811C840BA500D31419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0029517F1C840BA500D31419 /* Main.storyboard */; };
 		002951831C840BA500D31419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002951821C840BA500D31419 /* Assets.xcassets */; };
 		002951861C840BA500D31419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002951841C840BA500D31419 /* LaunchScreen.storyboard */; };
+		005B9FFE1C8669DC00F0D6B7 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005B9FFD1C8669DC00F0D6B7 /* TimelineViewController.swift */; };
+		005BA0011C866C6000F0D6B7 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BA0001C866C6000F0D6B7 /* ImageCell.swift */; };
+		005BA0031C8676DF00F0D6B7 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BA0021C8676DF00F0D6B7 /* CaptureViewController.swift */; };
+		005BA0051C86770F00F0D6B7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BA0041C86770F00F0D6B7 /* ProfileViewController.swift */; };
+		005BA0071C867C0600F0D6B7 /* UserMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BA0061C867C0600F0D6B7 /* UserMedia.swift */; };
 		00D7DE611C85209900195F84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D7DE601C85209900195F84 /* LoginViewController.swift */; };
 		9C44D5D06B77773235A2029C /* Pods_ParseInsta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169760A8FDF0D49108185FFE /* Pods_ParseInsta.framework */; };
 /* End PBXBuildFile section */
@@ -22,6 +27,11 @@
 		002951821C840BA500D31419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		002951851C840BA500D31419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		002951871C840BA500D31419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		005B9FFD1C8669DC00F0D6B7 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		005BA0001C866C6000F0D6B7 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		005BA0021C8676DF00F0D6B7 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		005BA0041C86770F00F0D6B7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		005BA0061C867C0600F0D6B7 /* UserMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMedia.swift; sourceTree = "<group>"; };
 		00D7DE601C85209900195F84 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		169760A8FDF0D49108185FFE /* Pods_ParseInsta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseInsta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5B00B2F580A553E71E8B6E /* Pods-ParseInsta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseInsta.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseInsta/Pods-ParseInsta.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +77,11 @@
 				002951841C840BA500D31419 /* LaunchScreen.storyboard */,
 				002951871C840BA500D31419 /* Info.plist */,
 				00D7DE601C85209900195F84 /* LoginViewController.swift */,
+				005B9FFD1C8669DC00F0D6B7 /* TimelineViewController.swift */,
+				005BA0021C8676DF00F0D6B7 /* CaptureViewController.swift */,
+				005BA0041C86770F00F0D6B7 /* ProfileViewController.swift */,
+				005BA0001C866C6000F0D6B7 /* ImageCell.swift */,
+				005BA0061C867C0600F0D6B7 /* UserMedia.swift */,
 			);
 			path = ParseInsta;
 			sourceTree = "<group>";
@@ -210,8 +225,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005BA0051C86770F00F0D6B7 /* ProfileViewController.swift in Sources */,
 				00D7DE611C85209900195F84 /* LoginViewController.swift in Sources */,
+				005BA0011C866C6000F0D6B7 /* ImageCell.swift in Sources */,
 				0029517C1C840BA500D31419 /* AppDelegate.swift in Sources */,
+				005B9FFE1C8669DC00F0D6B7 /* TimelineViewController.swift in Sources */,
+				005BA0031C8676DF00F0D6B7 /* CaptureViewController.swift in Sources */,
+				005BA0071C867C0600F0D6B7 /* UserMedia.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
