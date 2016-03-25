@@ -1,8 +1,8 @@
-# Project 6 - *ParseInsta*
+# Project 6 - *Snapshot*
 
-**ParseInsta** is a photo sharing app using Parse as its backend.
+**Snapshot** is a photo sharing app using Parse as its backend.
 
-Time spent: **X** hours spent in total
+Time spent: **15** hours spent in total
 
 ## User Stories
 
@@ -16,27 +16,22 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] Show the username and creation time for each post
+- [X] Show the username and creation time for each post
 - [X] After the user submits a new post, show a progress HUD while the post is being uploaded to Parse.
-- [ ] User Profiles:
-   - [ ] Allow the logged in user to add a profile photo
-   - [ ] Display the profile photo with each post
-   - [ ] Tapping on a post's username or profile photo goes to that user's profile page
+- [X] User Profiles:
+   - [X] Allow the logged in user to add a profile photo
+   - [X] Display the profile photo with each post
+   - [X] Tapping on a post's username or profile photo goes to that user's profile page
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
-
-Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
-
-1. 
-2. 
+- [X] Customized UI and Graphics
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/eLdz8XV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/oDSmZI0.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
