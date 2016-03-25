@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
 
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var signinView: UIView!
+    @IBOutlet weak var signupView: UIView!
 
     
     
@@ -21,7 +23,6 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsernameInBackground(usernameField.text!, password: passwordField.text!){(user: PFUser?, NSError)-> Void in
             if user != nil {
                 print("you're logged in!")
-                
                 self.performSegueWithIdentifier("loginSegue", sender: nil)
             }
             
@@ -51,6 +52,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        signinView.layer.cornerRadius = 10.0
+        signinView.clipsToBounds = true
+        signupView.layer.cornerRadius = 10.0
+        signupView.clipsToBounds = true
     }
     
     override func didReceiveMemoryWarning() {

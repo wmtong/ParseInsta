@@ -15,6 +15,7 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
     var imagePicked: UIImage?
     @IBOutlet weak var takePictureButton: UIButton!
     @IBOutlet weak var captionText: UITextField!
+    @IBOutlet weak var submitView: UIView!
     
     var userMedia: UserMedia!
     
@@ -24,7 +25,10 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
         // Do any additional setup after loading the view, typically from a nib.
         imageView.image = nil
         takePictureButton.hidden = false
-        
+        takePictureButton.layer.cornerRadius = 10.0
+        takePictureButton.clipsToBounds = true
+        submitView.layer.cornerRadius = 10.0
+        submitView.clipsToBounds = true
     }
     
     @IBAction func openCamera(sender: AnyObject) {
@@ -40,7 +44,6 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
         vc.delegate = self
         vc.allowsEditing = true
         vc.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        
         self.presentViewController(vc, animated: true, completion: nil)
     }
     
@@ -54,11 +57,10 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
             imagePicked = resize(editedImage,newSize: editedImage.size)
             imageView.image = imagePicked
             takePictureButton.hidden = true
-            
-
     }
 
     @IBAction func uploadPhoto(sender: AnyObject) {
+        if(takePictureButton.hidden==true){
         UserMedia.postUserImage(imagePicked, withCaption: captionText.text, withCompletion: { (result) -> Void in
             print("upload successful")
             let newPost = UserMedia(image: self.imagePicked!, caption: self.captionText.text!, likesCount: 0, commentsCount: 0)
@@ -71,6 +73,7 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
             self.tabBarController?.selectedIndex = 0
             self.takePictureButton.hidden = false
         })
+        }
     }
     
     

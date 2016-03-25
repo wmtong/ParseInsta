@@ -12,6 +12,9 @@ class ImageCell: UITableViewCell {
     
     @IBOutlet weak var instaImage: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
+    let tapProfileDetail = UITapGestureRecognizer()
+    let tapPicDetail = UITapGestureRecognizer()
+
     
     var media: UserMedia! {
         didSet {
@@ -23,5 +26,10 @@ class ImageCell: UITableViewCell {
             }
         }
     }
-
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        
+    }
 }
