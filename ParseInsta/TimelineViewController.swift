@@ -100,11 +100,9 @@ class TimelineViewController: UIViewController, UITableViewDataSource, UITableVi
         let labelView = UILabel(frame: CGRect(x: 50, y: 10, width: 200, height: 30))
         let userPath = user["username"] as! String
         labelView.text = userPath
-        //labelView.textColor = UIColor(red: 10/255, green: 96/255, blue: 254/255, alpha: 1)
         labelView.font = UIFont(name: "MarkerFelt", size: 18)
         headerView.addSubview(labelView)
         let tapRecognizer = UITapGestureRecognizer(target: self, action: Selector("iconTapGestureHandler:"))
-        //        tapRecognizer.cancelsTouchesInView = false
         tapRecognizer.numberOfTapsRequired = 1
         tapRecognizer.delegate = self
         headerView.addGestureRecognizer(tapRecognizer)

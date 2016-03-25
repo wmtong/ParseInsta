@@ -31,6 +31,7 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
         submitView.clipsToBounds = true
     }
     
+    /*
     @IBAction func openCamera(sender: AnyObject) {
         let vc = UIImagePickerController()
         vc.delegate = self
@@ -38,7 +39,9 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
         vc.sourceType = UIImagePickerControllerSourceType.Camera
         
         self.presentViewController(vc, animated: true, completion: nil)
-    }
+    }*/
+    
+    //photoselection methods
     @IBAction func openPhotos(sender: AnyObject) {
         let vc = UIImagePickerController()
         vc.delegate = self
@@ -75,7 +78,6 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
         })
         }
     }
-    
     
     func resize(image: UIImage, newSize: CGSize) -> UIImage {
         let resizeImageView = UIImageView(frame: CGRectMake(0, 0, newSize.width, newSize.height))

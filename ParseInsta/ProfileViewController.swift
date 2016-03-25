@@ -40,6 +40,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         // Dispose of any resources that can be recreated.
     }
     
+    //add a propic
     func proPicExists(){
         if(user.valueForKey("photo") != nil){
             if let proPic = user.valueForKey("photo") as? PFFile{
